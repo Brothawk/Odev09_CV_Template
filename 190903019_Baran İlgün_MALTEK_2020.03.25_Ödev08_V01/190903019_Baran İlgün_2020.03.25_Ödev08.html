@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Takip Formu</title>
+        <style type="text/css">
+          div.cont{
+            background-color: gray;
+             /* Firefox */
+              display: -moz-box;
+              -moz-box-pack: center;
+              -moz-box-align: center;
+            /* Safari and Chrome */
+              display: -webkit-box;
+              -webkit-box-pack: center;
+              -webkit-box-align: center;
+            /* W3C */
+              display: box;
+              box-pack: center;
+              box-align: center;
+               background-color: gray;
+              width:90%;
+        margin-left:auto;
+          margin-right:auto;
+          border: 3px solid green;
+          margin: 0 auto;
+          }
+          div.kb{
+            float: left;
+            margin: 5px;
+          }
+          .text_line
+   {
+      clear: both;
+   }
+          h3.baslik{
+            color: blue;
+          }
+          .adres{
+            
+            width: 375px;
+          }
+          table {
+  border: 1px solid black;
+}
+        </style>
+    </head>
+    <body>
+      <div class="cont">
+	<form action="https://formspree.io/baranilgn@gmail.com" method="POST">
+      <h1>Hasta Takip Formu</h1>
+      <p>Bu çalışma MALTEK çalışanı Baran İlgün tarafından yapılmıştır.</p>
+      <h3 class="baslik">Kişisel Bilgiler</h3>	     
+        <div class="kb">
+        <label>Adı:&nbsp<input type="text" id="ad name="ad" value="">
+        </label></div>
+        <div class="kb">
+        <label>Soyadı:&nbsp<input type="text" id="soyad" name="soyad" value=""></label><br>
+        </div>
+        <div class="text_line">
+        <label>Adres:&nbsp<input type="textarea" name="" id="" class="adres">
+        </label></div><br>
+        <h3 class="baslik">TıbbÎ Geçmişi</h3>
+        <div class="checkbox-inline">
+          <label>
+            <input type="checkbox" id="Hastalık1" name="Hastalık1" value="Boğmaca">
+            Boğmaca</label>
+          <label>
+            <input type="checkbox" id="Hastalık2" name="Hastalık2" value="Kabakulak">
+            Kabakulak</label>
+          <label>
+            <input type="checkbox" id="Hastalık3" name="Hastalık3" value="Kızamık">
+            Kızamık</label>
+          <label>
+            <input type="checkbox" id="Hastalık4" name="Hastalık4" value="Su Çiçeği">
+            Su Çiçeği</label>
+        </div>
+<h3 class="baslik">İlaç Tedavisi</h3>
+<p>Halen kullanmakta olduğunuz ilaçlar var mı?</p>
+  <input type="radio" id="ilaçevet" name="ie" value="evet">
+  <label for="evet">Evet</label><br>
+  <input type="radio" id="ilaçhayır" name="ie" value="hayır">
+  <label for="hayır">Hayır</label><br> 
+<p></p>  
+  <label for="açıklama1">Eğer ilaç kullanıyorsanız, aşağıya kullandığınız ilaçları ve günlük dozlarını belirtiniz:</label><br>
+  <td><textarea name="" id="" style="width : 300px;height:70px;"></textarea></td>
+ <p></p>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <p></p>
+  <input type="reset">
+  <td colspan="2"><button type="gönder">Gönder</button></td>
+</form></div>
+    </body>
+</html>
